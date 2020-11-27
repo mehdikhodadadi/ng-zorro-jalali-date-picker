@@ -2,7 +2,8 @@
 
 import { TemplateRef } from '@angular/core';
 
-import { IndexableObject, NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
+import { IndexableObject } from '../types/indexable';
 
 export function isNotNil<T>(value: T): value is NonNullable<T> {
   return typeof value !== 'undefined' && value !== null;
