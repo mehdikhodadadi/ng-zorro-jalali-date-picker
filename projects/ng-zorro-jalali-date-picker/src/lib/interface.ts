@@ -1,7 +1,5 @@
- 
-
-import { TemplateRef } from '@angular/core';
-import { NzSafeAny } from '../types';
+ import { TemplateRef } from '@angular/core';
+import { NzSafeAny } from '../types/any';
 
 export interface PanelSelector {
   className: string;

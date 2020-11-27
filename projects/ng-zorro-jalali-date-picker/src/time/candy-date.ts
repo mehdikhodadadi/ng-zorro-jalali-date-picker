@@ -22,7 +22,8 @@ import setYear from 'date-fns-jalali/setYear';
 import startOfMonth from 'date-fns-jalali/startOfMonth';
 import startOfWeek from 'date-fns-jalali/startOfWeek';
 import { warn } from '../logger/logger';
-import { IndexableObject, NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
+import { IndexableObject } from '../types/indexable';
 
 export type CandyDateMode = 'decade' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second';
 export type NormalizedMode = 'decade' | 'year' | 'month';

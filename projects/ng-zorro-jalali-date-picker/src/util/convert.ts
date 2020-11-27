@@ -2,7 +2,7 @@
 
 import { coerceBooleanProperty, coerceCssPixelValue, _isNumberValue } from '@angular/cdk/coercion';
 
-import { warn } from '../logger';
+import { warn } from '../logger/logger';
 import { FunctionProp, NzSafeAny } from '../types';
 
 export function toBoolean(value: boolean | string): boolean {

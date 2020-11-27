@@ -4,7 +4,8 @@ import fnsFormat from 'date-fns-jalali/format';
 import fnsGetISOWeek from 'date-fns-jalali/getISOWeek';
 import fnsParse from 'date-fns-jalali/parse';
 
-import { WeekDayIndex, ɵNgTimeParser } from '../time';
+import { WeekDayIndex } from '../time/candy-date';
+import { NgTimeParser } from '../time/time-parser';
 import { mergeDateConfig, NzDateConfig, NZ_DATE_CONFIG } from './date-config';
 import { NzI18nService } from './nz-i18n.service';
 
@@ -104,7 +105,7 @@ export class DateHelperByDatePipe extends DateHelperService {
   }
 
   parseTime(text: string, formatStr: string): Date {
-    const parser = new ɵNgTimeParser(formatStr, this.i18n.getLocaleId());
+    const parser = new NgTimeParser(formatStr, this.i18n.getLocaleId());
     return parser.toDate(text);
   }
 }

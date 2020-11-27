@@ -1,6 +1,5 @@
  
-
-import { CandyDate } from './time';
+import { CandyDate } from './time/candy-date';
 import { DisabledDateFn, DisabledTimeConfig, DisabledTimeFn } from './standard-types';
 
 export const PREFIX_CLASS = 'ant-picker';

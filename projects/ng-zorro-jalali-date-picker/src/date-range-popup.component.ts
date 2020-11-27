@@ -1,6 +1,4 @@
- 
-
-import {
+ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -15,9 +13,9 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-import { CandyDate, cloneDate, CompatibleValue, NormalizedMode, SingleValue, wrongSortOrder } from './time';
-import { FunctionProp } from './types';
-import { NzCalendarI18nInterface } from './i18n';
+import { CandyDate, cloneDate, CompatibleValue, NormalizedMode, SingleValue, wrongSortOrder } from './time/candy-date';
+import { FunctionProp } from './types/common-wrap';
+import { NzCalendarI18nInterface } from './i18n/nz-i18n.interface';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { DatePickerService } from './date-picker.service';

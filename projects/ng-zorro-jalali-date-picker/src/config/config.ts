@@ -4,8 +4,11 @@ import { InjectionToken, TemplateRef, Type } from '@angular/core';
 
 import { SafeUrl } from '@angular/platform-browser';
 import { ThemeType } from '@ant-design/icons-angular';
-import { NzBreakpointEnum } from '../services';
-import { NzSafeAny, NzShapeSCType, NzSizeDSType, NzSizeLDSType, NzSizeMDSType, NzTSType } from '../types';
+import { NzBreakpointEnum } from '../services/breakpoint';
+import { NzTSType } from '../types/template';
+import { NzSafeAny } from '../types/any';
+import { NzShapeSCType } from '../types/shape';
+import {NzSizeDSType, NzSizeLDSType, NzSizeMDSType} from '../types/size';
 
 export interface NzConfig {
   affix?: AffixConfig;

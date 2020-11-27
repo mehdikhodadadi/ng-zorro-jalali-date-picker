@@ -1,7 +1,5 @@
- 
-
-import { Inject, Injectable, Optional } from '@angular/core';
-import { NzSafeAny } from '../types';
+ import { Inject, Injectable, Optional } from '@angular/core';
+import { NzSafeAny } from '../types/any';
 import { Observable, Subject } from 'rxjs';
 
 import { filter, mapTo } from 'rxjs/operators';

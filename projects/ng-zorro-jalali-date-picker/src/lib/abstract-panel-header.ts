@@ -1,8 +1,8 @@
  
 
 import { Directive, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-import { CandyDate } from '../time';
-import { NzCalendarI18nInterface } from '../i18n';
+import { CandyDate } from '../time/candy-date';
+import { NzCalendarI18nInterface } from '../i18n/nz-i18n.interface';
 import { NzDateMode } from '../standard-types';
 import { PanelSelector } from './interface';
 

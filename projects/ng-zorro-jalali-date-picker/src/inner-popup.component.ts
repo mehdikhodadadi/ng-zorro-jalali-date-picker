@@ -1,6 +1,4 @@
- 
-
-import {
+ import {
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
@@ -13,8 +11,8 @@ import {
 } from '@angular/core';
 
 import { CandyDate } from './time/candy-date';
-import { FunctionProp } from './types';
-import { NzCalendarI18nInterface } from './i18n';
+import { FunctionProp } from './types/common-wrap';
+import { NzCalendarI18nInterface } from './i18n/nz-i18n.interface';
 import { DisabledDateFn, NzDateMode, RangePartType, SupportTimeOptions } from './standard-types';
 import { PREFIX_CLASS } from './util';
 

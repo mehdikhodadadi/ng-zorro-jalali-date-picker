@@ -1,10 +1,10 @@
  
 
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
-import { CandyDate } from '../time';
-import { valueFunctionProp } from '../util/';
+import { CandyDate } from '../time/candy-date';
+import { valueFunctionProp } from '../util/convert';
 
-import {  NzCalendarI18nInterface } from '../i18n';
+import {  NzCalendarI18nInterface } from '../i18n/nz-i18n.interface';
 import { DateHelperService } from '../i18n/date-helper.service';
 import { NzI18nService } from '../i18n/nz-i18n.service';
 import { AbstractTable } from './abstract-table';

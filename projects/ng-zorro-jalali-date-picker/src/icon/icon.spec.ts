@@ -11,7 +11,7 @@ import {
   RightOutline
 } from '@ant-design/icons-angular/icons';
 
-import { NzConfigService } from '../config';
+import { NzConfigService } from '../config/config.service';
 import { ComponentBed, createComponentBed } from '../core-testing/component-bed';
 
 import { NzIconDirective } from './icon.directive';

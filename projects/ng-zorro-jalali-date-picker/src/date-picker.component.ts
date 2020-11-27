@@ -21,18 +21,21 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { NzNoAnimationDirective } from './no-animation';
-import { CandyDate, cloneDate, CompatibleValue } from './time';
-import { BooleanInput, FunctionProp, NzSafeAny, OnChangeType, OnTouchedType } from './types';
+import { NzNoAnimationDirective } from './no-animation/nz-no-animation.directive';
+import { CandyDate, cloneDate, CompatibleValue } from './time/candy-date';
+import { NzSafeAny } from './types/any';
+import { BooleanInput } from './types/convert-input';
+import { OnChangeType, OnTouchedType } from './types/control-value-accessor';
+import { FunctionProp } from './types/common-wrap';
 import { InputBoolean, toBoolean, valueFunctionProp } from './util/';
-import { NzDatePickerI18nInterface, NzDatePickerLangI18nInterface } from './i18n';
+import { NzDatePickerI18nInterface, NzDatePickerLangI18nInterface } from './i18n/nz-i18n.interface';
 import { DateHelperService } from './i18n/date-helper.service';
 import { NzI18nService } from './i18n/nz-i18n.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { DatePickerService } from './date-picker.service';
 
-import { NzConfigKey } from './config';
+import { NzConfigKey } from './config/config';
 import { NzConfigService, WithConfig } from './config/config.service';
 import { warnDeprecation } from './logger/logger';
 import { NzPickerComponent } from './picker.component';

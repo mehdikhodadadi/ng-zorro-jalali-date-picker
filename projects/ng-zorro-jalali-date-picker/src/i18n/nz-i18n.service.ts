@@ -1,6 +1,7 @@
 import { Inject, Injectable, Optional } from '@angular/core';
-import { warn } from '../logger';
-import { IndexableObject, NzSafeAny } from '../types';
+import { warn } from '../logger/logger';
+import { NzSafeAny } from '../types/any';
+import { IndexableObject } from '../types/indexable';
 import { BehaviorSubject, Observable } from 'rxjs';
 import fa_IR from './languages/fa_IR';
 import { DateLocale, NzI18nInterface } from './nz-i18n.interface';

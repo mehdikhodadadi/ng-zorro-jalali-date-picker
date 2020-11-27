@@ -1,6 +1,4 @@
- 
-
-import { ESCAPE } from '@angular/cdk/keycodes';
+ import { ESCAPE } from '@angular/cdk/keycodes';
 import {
   CdkConnectedOverlay,
   CdkOverlayOrigin,
@@ -33,10 +31,10 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { slideMotion } from './animation';
-import { NzResizeObserver } from './resize-observers';
-
-import { CandyDate, CompatibleValue, wrongSortOrder } from './time';
-import { NgStyleInterface, NzSafeAny } from './types';
+import { NzResizeObserver } from './resize-observers/resize-observers.service';
+import { CandyDate, CompatibleValue, wrongSortOrder } from './time/candy-date';
+import { NzSafeAny } from './types/any';
+import { NgStyleInterface } from './types/ng-class';
 import { DateHelperService } from './i18n/date-helper.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

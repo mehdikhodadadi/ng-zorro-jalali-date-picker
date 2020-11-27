@@ -1,6 +1,4 @@
- 
-
-import {
+ import {
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
@@ -11,11 +9,11 @@ import {
   TemplateRef,
   ViewEncapsulation
 } from '@angular/core';
-import { CandyDate } from './time';
-import { NzSafeAny } from './types';
+import { CandyDate } from './time/candy-date';
+import { NzSafeAny } from './types/any';
 
-import { isNonEmptyString, isTemplateRef } from './util/';
-import { NzCalendarI18nInterface } from './i18n';
+import { isNonEmptyString, isTemplateRef } from './util/check';
+import { NzCalendarI18nInterface } from './i18n/nz-i18n.interface';
 import { DateHelperService } from './i18n/date-helper.service';
 import { transCompatFormat } from './lib/util';
 import { PREFIX_CLASS } from './util';

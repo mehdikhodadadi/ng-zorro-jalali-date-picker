@@ -1,7 +1,7 @@
  
 
 import { InjectionToken } from '@angular/core';
-import { WeekDayIndex } from '../time';
+import { WeekDayIndex } from '../time/candy-date';
 
 export interface NzDateConfig {
   /** Customize the first day of a week */
