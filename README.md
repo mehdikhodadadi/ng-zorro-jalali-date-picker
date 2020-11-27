@@ -1,1 +1,1 @@
-# Angular-datepicker-jalali
+# ng-zorro-jalali-date-picker
