@@ -1,0 +1,38 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../i18n-public-api.ts",
+      "umdModuleIds":{
+        "date-fns-jalali/getISOWeek": "fnsGetISOWeek",
+        "date-fns-jalali/format": "fnsFormat",
+        "date-fns-jalali/parse": "fnsParse",
+        "date-fns-jalali/addMonths": "addMonths",
+        "date-fns-jalali/addYears": "addYears",
+        "date-fns-jalali/differenceInCalendarDays": "differenceInCalendarDays",
+        "date-fns-jalali": "dateFns",
+        "date-fns-jalali/differenceInCalendarMonths": "differenceInCalendarMonths",
+        "date-fns-jalali/differenceInCalendarYears": "differenceInCalendarYears",
+        "date-fns-jalali/differenceInHours": "differenceInHours",
+        "date-fns-jalali/differenceInMinutes": "differenceInMinutes",
+        "date-fns-jalali/differenceInSeconds": "differenceInSeconds",
+        "date-fns-jalali/isFirstDayOfMonth": "isFirstDayOfMonth",
+        "date-fns-jalali/isLastDayOfMonth": "isLastDayOfMonth",
+        "date-fns-jalali/isSameDay": "isSameDay",
+        "date-fns-jalali/isSameHour": "isSameHour",
+        "date-fns-jalali/isSameMinute": "isSameMinute",
+        "date-fns-jalali/isSameSecond": "isSameSecond",
+        "date-fns-jalali/isSameMonth": "isSameMonth",
+        "date-fns-jalali/isSameYear": "isSameYear",
+        "date-fns-jalali/isToday": "isToday",
+        "date-fns-jalali/isValid": "isValid",
+        "date-fns-jalali/setDay": "setDay",
+        "date-fns-jalali/setMonth": "setMonth",
+        "date-fns-jalali/setYear": "setYear",
+        "date-fns-jalali/startOfMonth": "startOfMonth",
+        "date-fns-jalali/startOfWeek": "startOfWeek",
+        "resize-observer-polyfill": "ResizeObserver"
+      }
+    },
+    "whitelistedNonPeerDependencies": ["tslib", "@ant-design/icons-angular"]
+  }
+}

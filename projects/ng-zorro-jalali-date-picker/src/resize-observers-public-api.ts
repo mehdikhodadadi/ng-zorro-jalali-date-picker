@@ -1,0 +1,1 @@
+import './resize-observers/public-api'

@@ -1,0 +1,7 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../environments-public-api.ts"
+    }
+  }
+}

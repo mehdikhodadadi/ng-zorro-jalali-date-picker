@@ -1,0 +1,7 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../outlet-public-api.ts"
+    }
+  }
+}

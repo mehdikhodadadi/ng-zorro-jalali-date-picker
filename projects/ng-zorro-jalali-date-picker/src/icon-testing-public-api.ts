@@ -1,0 +1,1 @@
+import './icon-testing/public-api'

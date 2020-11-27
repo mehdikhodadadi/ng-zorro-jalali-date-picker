@@ -1,0 +1,11 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../resize-observers-public-api.ts",
+      "umdModuleIds": {
+        "resize-observer-polyfill": "ResizeObserver"
+      }
+    },
+    "whitelistedNonPeerDependencies": ["tslib", "resize-observer-polyfill"]
+  }
+}

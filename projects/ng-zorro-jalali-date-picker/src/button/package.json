@@ -1,0 +1,11 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../button-public-api.ts",
+      "umdModuleIds": {
+        "@ant-design/icons-angular": "iconsAngular",
+        "@ant-design/icons-angular/icons": "icons"
+      }
+    }
+  }
+}

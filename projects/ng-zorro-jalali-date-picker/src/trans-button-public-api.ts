@@ -1,0 +1,1 @@
+import './trans-button/public-api'

@@ -1,0 +1,155 @@
+ 
+
+import {
+  AfterContentInit,
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  ContentChild,
+  ElementRef,
+  Input,
+  OnChanges,
+  OnDestroy,
+  Renderer2,
+  SimpleChanges,
+  ViewEncapsulation
+} from '@angular/core';
+import { NzConfigKey } from '../config';
+import { NzConfigService, WithConfig } from '../config/config.service';
+import { BooleanInput } from '../types';
+import { InputBoolean } from '../util/';
+
+import { NzIconDirective } from '../icon';
+import { Subject } from 'rxjs';
+import { filter, startWith, takeUntil } from 'rxjs/operators';
+
+export type NzButtonType = 'primary' | 'default' | 'dashed' | 'danger' | 'link' | 'text' | null;
+export type NzButtonShape = 'circle' | 'round' | null;
+export type NzButtonSize = 'large' | 'default' | 'small';
+
+const NZ_CONFIG_MODULE_NAME: NzConfigKey = 'button';
+
+@Component({
+  selector: 'button[nz-button], a[nz-button]',
+  exportAs: 'nzButton',
+  preserveWhitespaces: false,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <i nz-icon nzType="loading" *ngIf="nzLoading"></i>
+    <ng-content></ng-content>
+  `,
+  host: {
+    '[class.ant-btn]': `true`,
+    '[class.ant-btn-primary]': `nzType === 'primary'`,
+    '[class.ant-btn-dashed]': `nzType === 'dashed'`,
+    '[class.ant-btn-link]': `nzType === 'link'`,
+    '[class.ant-btn-text]': `nzType === 'text'`,
+    '[class.ant-btn-danger]': `nzType === 'danger'`,
+    '[class.ant-btn-circle]': `nzShape === 'circle'`,
+    '[class.ant-btn-round]': `nzShape === 'round'`,
+    '[class.ant-btn-lg]': `nzSize === 'large'`,
+    '[class.ant-btn-sm]': `nzSize === 'small'`,
+    '[class.ant-btn-dangerous]': `nzDanger`,
+    '[class.ant-btn-loading]': `nzLoading`,
+    '[class.ant-btn-background-ghost]': `nzGhost`,
+    '[class.ant-btn-block]': `nzBlock`,
+    '[class.ant-input-search-button]': `nzSearch`,
+    '[attr.tabindex]': 'disabled ? -1 : (tabIndex === null ? null : tabIndex)',
+    '[attr.disabled]': 'disabled || null'
+  }
+})
+export class NzButtonComponent implements OnDestroy, OnChanges, AfterViewInit, AfterContentInit {
+  readonly _nzModuleName: NzConfigKey = NZ_CONFIG_MODULE_NAME;
+  static ngAcceptInputType_nzBlock: BooleanInput;
+  static ngAcceptInputType_nzGhost: BooleanInput;
+  static ngAcceptInputType_nzSearch: BooleanInput;
+  static ngAcceptInputType_nzLoading: BooleanInput;
+  static ngAcceptInputType_nzDanger: BooleanInput;
+  static ngAcceptInputType_disabled: BooleanInput;
+
+  @ContentChild(NzIconDirective, { read: ElementRef }) nzIconDirectiveElement!: ElementRef;
+  @Input() @InputBoolean() nzBlock: boolean = false;
+  @Input() @InputBoolean() nzGhost: boolean = false;
+  @Input() @InputBoolean() nzSearch: boolean = false;
+  @Input() @InputBoolean() nzLoading: boolean = false;
+  @Input() @InputBoolean() nzDanger: boolean = false;
+  @Input() @InputBoolean() disabled: boolean = false;
+  @Input() tabIndex: number | string | null = null;
+  @Input() nzType: NzButtonType = null;
+  @Input() nzShape: NzButtonShape = null;
+  @Input() @WithConfig() nzSize: NzButtonSize = 'default';
+  private destroy$ = new Subject<void>();
+  private loading$ = new Subject<boolean>();
+
+  insertSpan(nodes: NodeList, renderer: Renderer2): void {
+    nodes.forEach(node => {
+      if (node.nodeName === '#text') {
+        const span = renderer.createElement('span');
+        const parent = renderer.parentNode(node);
+        renderer.insertBefore(parent, span, node);
+        renderer.appendChild(span, node);
+      }
+    });
+  }
+
+  assertIconOnly(element: HTMLButtonElement, renderer: Renderer2): void {
+    const listOfNode = Array.from(element.childNodes);
+    const iconCount = listOfNode.filter(node => node.nodeName === 'I').length;
+    const noText = listOfNode.every(node => node.nodeName !== '#text');
+    const noSpan = listOfNode.every(node => node.nodeName !== 'SPAN');
+    const isIconOnly = noSpan && noText && iconCount >= 1;
+    if (isIconOnly) {
+      renderer.addClass(element, 'ant-btn-icon-only');
+    }
+  }
+
+  constructor(
+    private elementRef: ElementRef,
+    private cdr: ChangeDetectorRef,
+    private renderer: Renderer2,
+    public nzConfigService: NzConfigService
+  ) {
+    this.nzConfigService
+      .getConfigChangeEventForComponent(NZ_CONFIG_MODULE_NAME)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(() => {
+        this.cdr.markForCheck();
+      });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    const { nzLoading } = changes;
+    if (nzLoading) {
+      this.loading$.next(this.nzLoading);
+    }
+  }
+
+  ngAfterViewInit(): void {
+    this.assertIconOnly(this.elementRef.nativeElement, this.renderer);
+    this.insertSpan(this.elementRef.nativeElement.childNodes, this.renderer);
+  }
+
+  ngAfterContentInit(): void {
+    this.loading$
+      .pipe(
+        startWith(this.nzLoading),
+        filter(() => !!this.nzIconDirectiveElement),
+        takeUntil(this.destroy$)
+      )
+      .subscribe(loading => {
+        const nativeElement = this.nzIconDirectiveElement.nativeElement;
+        if (loading) {
+          this.renderer.setStyle(nativeElement, 'display', 'none');
+        } else {
+          this.renderer.removeStyle(nativeElement, 'display');
+        }
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+}

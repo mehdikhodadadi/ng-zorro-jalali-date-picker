@@ -1,0 +1,7 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "../core-testing-public-api.ts"
+    }
+  }
+}
