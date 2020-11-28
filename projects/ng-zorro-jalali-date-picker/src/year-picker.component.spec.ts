@@ -6,10 +6,10 @@ import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { dispatchMouseEvent } from './core-testing';
-import { NgStyleInterface } from './types';
-import { getPickerAbstract, getPickerInput } from 'jalali-date-picker/testing/util';
-import { PREFIX_CLASS } from 'jalali-date-picker/util';
-import { NzInputModule } from 'jalali-date-picker/input';
+import { NgStyleInterface } from './types/ng-class';
+import { getPickerAbstract, getPickerInput } from './testing/util';
+import { PREFIX_CLASS } from './util';
+import { NzInputModule } from './input/input.module';
 
 import { NzDatePickerModule } from './date-picker.module';
 

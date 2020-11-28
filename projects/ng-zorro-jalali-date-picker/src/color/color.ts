@@ -1,6 +1,6 @@
  
 
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 export const presetColors = [
   'pink',

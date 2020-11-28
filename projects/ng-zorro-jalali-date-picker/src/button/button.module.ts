@@ -3,8 +3,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { ɵNzTransitionPatchModule as NzTransitionPatchModule } from '../transition-patch';
-import { NzWaveModule } from '../wave';
+import { NzTransitionPatchModule } from '../transition-patch/transition-patch.module';
+import { NzWaveModule } from '../wave/nz-wave.module';
 import { NzIconModule } from '../icon/icon.module';
 import { NzButtonGroupComponent } from './button-group.component';
 import { NzButtonComponent } from './button.component';

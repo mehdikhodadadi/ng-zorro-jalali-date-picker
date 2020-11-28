@@ -15,9 +15,9 @@ import {
   SimpleChanges,
   ViewEncapsulation
 } from '@angular/core';
-import { NzConfigKey } from '../config';
+import { NzConfigKey } from '../config/config';
 import { NzConfigService, WithConfig } from '../config/config.service';
-import { BooleanInput } from '../types';
+import { BooleanInput } from '../types/convert-input';
 import { InputBoolean } from '../util/convert';
 
 import { NzIconDirective } from '../icon/icon.directive';

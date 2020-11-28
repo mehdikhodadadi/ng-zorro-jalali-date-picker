@@ -6,7 +6,7 @@ import { Inject, Injectable, InjectionToken, Optional, RendererFactory2, Self } 
 import { DomSanitizer } from '@angular/platform-browser';
 import { IconDefinition, IconService } from '@ant-design/icons-angular';
 import { NzConfigService } from '../config/config.service';
-import { IconConfig } from '../config';
+import { IconConfig } from '../config/config';
 import { warn } from '../logger/logger';
 import { NzSafeAny } from '../types/any';
 import { Subject } from 'rxjs';

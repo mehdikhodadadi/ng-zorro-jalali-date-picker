@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { fakeAsync } from '@angular/core/testing';
-import { NzButtonModule } from 'jalali-date-picker/button';
+import { NzButtonModule } from '../button/button.module';
 import { ComponentBed, createComponentBed } from '../core-testing/component-bed';
 import { NzElementPatchDirective } from './element-patch.directive';
 import { NzElementPatchModule } from './element-patch.module';

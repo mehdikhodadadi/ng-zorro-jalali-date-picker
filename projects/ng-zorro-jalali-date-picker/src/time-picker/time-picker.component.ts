@@ -22,7 +22,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { isValid } from 'date-fns-jalali';
 import { slideMotion } from '../animation';
 
-import { NzConfigKey } from '../config';
+import { NzConfigKey } from '../config/config';
 import { NzConfigService, WithConfig } from '../config/config.service';
 import { warn } from '../logger/logger';
 import { NzSafeAny } from '../types/any';

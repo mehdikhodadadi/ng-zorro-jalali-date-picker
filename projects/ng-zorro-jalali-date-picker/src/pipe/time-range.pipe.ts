@@ -2,7 +2,7 @@
 
 import { Pipe, PipeTransform } from '@angular/core';
 import { timeUnits } from '../time';
-import { padStart } from '../util/convert';
+import { padStart } from '../util/string';
 
 @Pipe({
   name: 'nzTimeRange',

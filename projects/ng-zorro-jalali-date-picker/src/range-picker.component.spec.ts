@@ -12,10 +12,10 @@ import isSameDay from 'date-fns-jalali/isSameDay';
 
 import { dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, typeInElement } from './core-testing';
 import { CandyDate } from './time';
-import { NgStyleInterface } from './types';
-import { RangePartType } from 'jalali-date-picker/standard-types';
-import { ENTER_EVENT, getPickerAbstract, getPickerInput, getRangePickerRightInput } from 'jalali-date-picker/testing/util';
-import { PREFIX_CLASS } from 'jalali-date-picker/util';
+import { NgStyleInterface } from './types/ng-class';
+import { RangePartType } from './standard-types';
+import { ENTER_EVENT, getPickerAbstract, getPickerInput, getRangePickerRightInput } from './testing/util';
+import { PREFIX_CLASS } from './util';
 import { NzDatePickerModule } from './date-picker.module';
 
 registerLocaleData(zh);

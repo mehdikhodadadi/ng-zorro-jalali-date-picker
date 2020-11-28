@@ -2,7 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { manifest, ThemeType } from '@ant-design/icons-angular';
 import { AccountBookFill } from '@ant-design/icons-angular/icons';
-import { NzIconService } from 'jalali-date-picker/icon';
+import { NzIconService } from '../icon.service';
 
 export interface Categories {
   direction: string[];

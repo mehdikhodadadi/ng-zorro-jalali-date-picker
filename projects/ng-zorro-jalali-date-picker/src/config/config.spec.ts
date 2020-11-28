@@ -2,7 +2,8 @@ import { Component, DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { NzButtonComponent, NzButtonModule } from 'jalali-date-picker/button';
+import { NzButtonModule } from '../button/button.module';
+import { NzButtonComponent } from '../button/button.component';
 import { NZ_CONFIG } from './config';
 import { NzConfigService } from './config.service';
 

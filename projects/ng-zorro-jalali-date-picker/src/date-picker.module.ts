@@ -9,7 +9,7 @@ import { NzButtonModule } from './button/button.module';
 import { NzNoAnimationModule } from './no-animation/nz-no-animation.module';
 import { NzOutletModule } from './outlet/outlet.module';
 import { NzOverlayModule } from './overlay/nz-overlay.module';
-import { NzIconModule } from './icon';
+import { NzIconModule } from './icon/icon.module';
 import { NzTimePickerModule } from './time-picker/time-picker.module';
 import { CalendarFooterComponent } from './calendar-footer.component';
 

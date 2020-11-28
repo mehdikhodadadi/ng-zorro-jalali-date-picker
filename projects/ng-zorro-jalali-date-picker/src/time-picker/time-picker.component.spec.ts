@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { dispatchMouseEvent } from '../core-testing';
-import { getPickerInput } from 'jalali-date-picker/testing/util';
+import { getPickerInput } from '../testing/util';
 import { NzI18nModule } from '../i18n/nz-i18n.module';
 import { NzTimePickerComponent } from './time-picker.component';
 import { NzTimePickerModule } from './time-picker.module';

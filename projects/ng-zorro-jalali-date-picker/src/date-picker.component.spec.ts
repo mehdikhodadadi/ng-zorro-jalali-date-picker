@@ -12,8 +12,10 @@ import isSameDay from 'date-fns-jalali/isSameDay';
 import { enUS } from 'date-fns-jalali/locale';
 
 import { dispatchKeyboardEvent, dispatchMouseEvent, typeInElement } from './core-testing';
-import { NgStyleInterface } from './types';
-import { NzI18nModule, NzI18nService, NZ_DATE_LOCALE } from 'jalali-date-picker/i18n';
+import { NgStyleInterface } from './types/ng-class';
+import { NZ_DATE_LOCALE } from './i18n/nz-i18n.token';
+import { NzI18nService } from './i18n/nz-i18n.service';
+import { NzI18nModule } from './i18n/nz-i18n.module';
 import en_US from './i18n/languages/en_US';
 import { NzDatePickerComponent } from './date-picker.component';
 import { NzDatePickerModule } from './date-picker.module';

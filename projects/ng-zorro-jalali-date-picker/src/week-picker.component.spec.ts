@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { dispatchMouseEvent } from './core-testing';
-import { getPickerInput } from 'jalali-date-picker/testing/util';
+import { getPickerInput } from './testing/util';
 import { NzDatePickerModule } from './date-picker.module';
 
 describe('NzWeekPickerComponent', () => {
