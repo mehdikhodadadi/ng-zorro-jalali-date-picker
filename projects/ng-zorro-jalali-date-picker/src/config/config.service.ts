@@ -72,7 +72,7 @@ export function WithConfig<T>() {
 
         return ret;
       },
-      set(value?: T): void {
+      set(value: T): void {
         // If the value is assigned, we consider the newly assigned value as 'assigned by user'.
         this.assignmentCount = this.assignmentCount || {};
         this.assignmentCount[propName] = (this.assignmentCount[propName] || 0) + 1;

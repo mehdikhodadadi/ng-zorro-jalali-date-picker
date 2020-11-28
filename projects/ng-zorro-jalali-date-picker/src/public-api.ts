@@ -1,6 +1,4 @@
- 
-
-export * from './standard-types';
+ export * from './standard-types';
 export * from './util';
 
 export { NzDatePickerModule } from './date-picker.module';

@@ -1,5 +1,4 @@
  
-
 import { Platform } from '@angular/cdk/platform';
 import { NgZone } from '@angular/core';
 import { NzSafeAny } from '../types/any';
@@ -10,7 +9,7 @@ export class NzWaveRenderer {
   private extraNode: HTMLDivElement | null = null;
   private lastTime = 0;
   private platform!: Platform;
-  clickHandler: () => void;
+  clickHandler: (event: MouseEvent) => void;
   get waveAttributeName(): string {
     return this.insertExtraNode ? 'ant-click-animating' : 'ant-click-animating-without-extra-node';
   }

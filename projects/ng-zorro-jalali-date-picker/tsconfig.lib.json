@@ -4,7 +4,6 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
     "baseUrl": "src",
-    "rootDir": "src",
     "target": "es2015",
     "declaration": true,
     "declarationMap": true,
@@ -19,6 +18,5 @@
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
     "enableResourceInlining": true
-   },
-  "include": ["**/*", "**/*.ts"]
-}
+   }
+  }
