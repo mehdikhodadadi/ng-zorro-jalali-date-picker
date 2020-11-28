@@ -1,6 +1,6 @@
  import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NzButtonModule } from './button/button.module';
 
@@ -44,10 +44,10 @@ import { NzYearPickerComponent } from './year-picker.component';
     NzYearPickerComponent,
     NzWeekPickerComponent,
     NzRangePickerComponent,
-
     CalendarFooterComponent,
     InnerPopupComponent,
     DateRangePopupComponent
-  ]
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class NzDatePickerModule {}

@@ -15,6 +15,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+     "ng-zorro-jalali-date-picker": ["dist/ng-zorro-jalali-date-picker"],
+     "ng-zorro-jalali-date-picker/*": ["dist/ng-zorro-jalali-date-picker/*"]
+   }
   }
 }
