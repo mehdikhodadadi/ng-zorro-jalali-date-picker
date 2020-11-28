@@ -7,10 +7,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NzOutletModule } from '../outlet';
+import { NzOutletModule } from '../outlet/outlet.module';
 
 import { NzI18nModule } from '../i18n/nz-i18n.module';
-import { NzTimePickerModule } from '../time-picker';
+import { NzTimePickerModule } from '../time-picker/time-picker.module';
 import { DateHeaderComponent } from './date-header.component';
 import { DateTableComponent } from './date-table.component';
 import { DecadeHeaderComponent } from './decade-header.component';

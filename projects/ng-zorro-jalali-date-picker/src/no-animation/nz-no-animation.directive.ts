@@ -3,8 +3,8 @@
 import { coerceElement } from '@angular/cdk/coercion';
 import { AfterViewInit, Directive, ElementRef, Inject, Input, OnChanges, Optional, Renderer2 } from '@angular/core';
 import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
-import { BooleanInput } from '../types';
-import { InputBoolean } from '../util/';
+import { BooleanInput } from '../types/any';
+import { InputBoolean } from '../util/convert';
 
 const DISABLED_CLASSNAME = 'nz-animate-disabled';
 

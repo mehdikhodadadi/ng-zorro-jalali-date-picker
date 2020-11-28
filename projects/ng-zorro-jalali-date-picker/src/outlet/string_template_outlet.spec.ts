@@ -1,6 +1,6 @@
 import { Component, TemplateRef, ViewChild } from '@angular/core';
 import { ɵcreateComponentBed as createComponentBed } from '../core-testing';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 import { NzOutletModule } from './outlet.module';
 import { NzStringTemplateOutletDirective } from './string_template_outlet.directive';
 

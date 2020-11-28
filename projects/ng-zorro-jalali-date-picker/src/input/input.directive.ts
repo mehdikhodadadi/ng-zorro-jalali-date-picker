@@ -2,7 +2,8 @@
 
 import { Directive, ElementRef, Input, OnChanges, OnDestroy, OnInit, Optional, Renderer2, Self, SimpleChanges } from '@angular/core';
 import { NgControl } from '@angular/forms';
-import { BooleanInput, NzSizeLDSType } from '../types';
+import { BooleanInput } from '../types/convert-input';
+import { NzSizeLDSType } from '../types/size';
 import { InputBoolean } from '../util/';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';

@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { ɵNzTransitionPatchModule as NzTransitionPatchModule } from '../transition-patch';
 import { NzWaveModule } from '../wave';
-import { NzIconModule } from '../icon';
+import { NzIconModule } from '../icon/icon.module';
 import { NzButtonGroupComponent } from './button-group.component';
 import { NzButtonComponent } from './button.component';
 

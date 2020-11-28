@@ -4,7 +4,7 @@ import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { filter, finalize, map } from 'rxjs/operators';
 
-import { getEventPosition, isTouchEvent } from '../util/';
+import { getEventPosition, isTouchEvent } from '../util/dom';
 
 interface Point {
   x: number;

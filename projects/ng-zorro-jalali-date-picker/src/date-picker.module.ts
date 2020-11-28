@@ -4,13 +4,13 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NzButtonModule } from './button';
+import { NzButtonModule } from './button/button.module';
 
-import { NzNoAnimationModule } from './no-animation';
-import { NzOutletModule } from './outlet';
-import { NzOverlayModule } from './overlay';
+import { NzNoAnimationModule } from './no-animation/nz-no-animation.module';
+import { NzOutletModule } from './outlet/outlet.module';
+import { NzOverlayModule } from './overlay/nz-overlay.module';
 import { NzIconModule } from './icon';
-import { NzTimePickerModule } from './time-picker';
+import { NzTimePickerModule } from './time-picker/time-picker.module';
 import { CalendarFooterComponent } from './calendar-footer.component';
 
 import { NzDatePickerComponent } from './date-picker.component';

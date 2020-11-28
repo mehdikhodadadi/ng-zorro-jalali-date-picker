@@ -2,7 +2,7 @@
 
 import { ChangeDetectionStrategy, Component, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
 import { CandyDate } from '../time';
-import { valueFunctionProp } from '../util/';
+import { valueFunctionProp } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';
 import { AbstractTable } from './abstract-table';
 import { DateBodyRow, DateCell } from './interface';

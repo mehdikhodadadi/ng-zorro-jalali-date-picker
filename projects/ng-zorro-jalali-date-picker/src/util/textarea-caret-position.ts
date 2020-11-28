@@ -1,5 +1,5 @@
  
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 // from https://github.com/component/textarea-caret-position
 

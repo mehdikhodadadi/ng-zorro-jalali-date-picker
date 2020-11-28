@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 
-import { NzIconModule } from '../icon';
+import { NzIconModule } from '../icon/icon.module';
 import { NZ_ICONS } from '../icon/icon.service';
 
 const antDesignIcons = AllIcons as {

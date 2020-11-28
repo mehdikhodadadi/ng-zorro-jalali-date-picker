@@ -1,7 +1,7 @@
  
 
 import { Directive, EmbeddedViewRef, Input, OnChanges, SimpleChange, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 @Directive({
   selector: '[nzStringTemplateOutlet]',

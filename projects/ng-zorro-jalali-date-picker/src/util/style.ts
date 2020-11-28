@@ -1,6 +1,6 @@
  
 
-import { NgStyleInterface } from '../types';
+import { NgStyleInterface } from '../types/ng-class';
 
 export function isStyleSupport(styleName: string | string[]): boolean {
   if (typeof window !== 'undefined' && window.document && window.document.documentElement) {

@@ -1,5 +1,5 @@
  
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 export function scrollIntoView(node: HTMLElement): void {
   const nodeAsAny = node as NzSafeAny;

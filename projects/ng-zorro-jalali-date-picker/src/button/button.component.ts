@@ -18,9 +18,9 @@ import {
 import { NzConfigKey } from '../config';
 import { NzConfigService, WithConfig } from '../config/config.service';
 import { BooleanInput } from '../types';
-import { InputBoolean } from '../util/';
+import { InputBoolean } from '../util/convert';
 
-import { NzIconDirective } from '../icon';
+import { NzIconDirective } from '../icon/icon.directive';
 import { Subject } from 'rxjs';
 import { filter, startWith, takeUntil } from 'rxjs/operators';
 

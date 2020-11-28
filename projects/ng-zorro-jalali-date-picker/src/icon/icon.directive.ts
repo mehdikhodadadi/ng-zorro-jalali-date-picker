@@ -1,7 +1,7 @@
 import { AfterContentChecked, Directive, ElementRef, Input, OnChanges, OnInit, Optional, Renderer2, SimpleChanges } from '@angular/core';
 import { IconDirective, ThemeType } from '@ant-design/icons-angular';
-import { BooleanInput } from '../types';
-import { InputBoolean } from '../util/';
+import { BooleanInput } from '../types/convert-input';
+import { InputBoolean } from '../util/convert';
 
 import { NzIconPatchService, NzIconService } from './icon.service';
 

@@ -25,8 +25,10 @@ import { slideMotion } from '../animation';
 import { NzConfigKey } from '../config';
 import { NzConfigService, WithConfig } from '../config/config.service';
 import { warn } from '../logger/logger';
-import { BooleanInput, NzSafeAny } from '../types';
-import { InputBoolean, isNil } from '../util/';
+import { NzSafeAny } from '../types/any';
+import { BooleanInput } from '../types/convert-input';
+import { InputBoolean } from '../util/convert';
+import { isNil } from '../util/check';
 import { DateHelperService } from '../i18n/date-helper.service';
 
 const NZ_CONFIG_MODULE_NAME: NzConfigKey = 'timePicker';

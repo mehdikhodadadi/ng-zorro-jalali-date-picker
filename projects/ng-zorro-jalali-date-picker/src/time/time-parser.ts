@@ -2,7 +2,7 @@
 
 // from https://github.com/hsuanxyz/ng-time-parser
 import { FormStyle, getLocaleDayPeriods, TranslationWidth } from '@angular/common';
-import { isNotNil } from '../util/';
+import { isNotNil } from '../util/check';
 
 export interface TimeResult {
   hour: number | null;

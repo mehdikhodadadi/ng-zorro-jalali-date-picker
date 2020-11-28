@@ -2,7 +2,7 @@
 
 import { Observable, Subject } from 'rxjs';
 
-import { isNil, isNotNil } from '../util/';
+import { isNil, isNotNil } from '../util/check';
 
 export class TimeHolder {
   selected12Hours: string | undefined = undefined;

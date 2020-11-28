@@ -8,7 +8,7 @@ import { IconDefinition, IconService } from '@ant-design/icons-angular';
 import { NzConfigService } from '../config/config.service';
 import { IconConfig } from '../config';
 import { warn } from '../logger/logger';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 import { Subject } from 'rxjs';
 import { NZ_ICONS_USED_BY_ZORRO } from './icons';
 

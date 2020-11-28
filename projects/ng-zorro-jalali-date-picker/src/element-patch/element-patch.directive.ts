@@ -1,7 +1,7 @@
  
 
 import { Directive, ElementRef } from '@angular/core';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 /**
  * A patch directive to select the element of a component.

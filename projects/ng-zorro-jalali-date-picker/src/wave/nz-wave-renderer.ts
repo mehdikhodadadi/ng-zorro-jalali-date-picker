@@ -2,7 +2,7 @@
 
 import { Platform } from '@angular/cdk/platform';
 import { NgZone } from '@angular/core';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 export class NzWaveRenderer {
   private waveTransitionDuration = 400;

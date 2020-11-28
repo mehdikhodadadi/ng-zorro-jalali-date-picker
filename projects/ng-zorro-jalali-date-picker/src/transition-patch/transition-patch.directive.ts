@@ -1,7 +1,7 @@
  
 
 import { AfterViewInit, Directive, ElementRef, Input, OnChanges, Renderer2 } from '@angular/core';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 /**
  * hack the bug

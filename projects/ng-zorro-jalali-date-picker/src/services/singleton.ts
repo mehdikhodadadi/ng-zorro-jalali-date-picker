@@ -3,7 +3,7 @@
 import { Injectable } from '@angular/core';
 
 import { environment } from '../environments';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 
 interface SingletonRegistryItem {
   target: NzSafeAny;

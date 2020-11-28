@@ -2,7 +2,7 @@
 
 import { Directive, ElementRef, Inject, InjectionToken, Input, NgZone, OnDestroy, OnInit, Optional, PLATFORM_ID } from '@angular/core';
 import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
-import { NzSafeAny } from '../types';
+import { NzSafeAny } from '../types/any';
 import { NzWaveRenderer } from './nz-wave-renderer';
 
 export interface NzWaveConfig {

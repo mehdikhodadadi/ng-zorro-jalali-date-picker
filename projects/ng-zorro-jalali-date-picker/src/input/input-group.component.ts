@@ -18,8 +18,9 @@ import {
   TemplateRef,
   ViewEncapsulation
 } from '@angular/core';
-import { BooleanInput, NzSizeLDSType } from '../types';
-import { InputBoolean } from '../util/';
+import { BooleanInput } from '../types/convert-input';
+import { NzSizeLDSType } from '../types/size';
+import { InputBoolean } from '../util/convert';
 import { merge, Subject } from 'rxjs';
 import { flatMap, map, startWith, switchMap, takeUntil } from 'rxjs/operators';
 import { NzInputDirective } from './input.directive';

@@ -18,9 +18,10 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { reqAnimFrame } from '../polyfill';
-import { BooleanInput } from '../types';
+import { BooleanInput } from '../types/convert-input';
 
-import { InputBoolean, isNotNil } from '../util/';
+import { isNotNil } from '../util/check';
+import { InputBoolean } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
