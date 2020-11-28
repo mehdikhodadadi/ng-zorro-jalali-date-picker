@@ -40,5 +40,6 @@
     "jalali-date-picker/icon/icons": "NZ_ICONS_USED_BY_ZORRO",
     "jalali-date-picker/core/config": "IconConfig,NzConfigService"
   }
-  }
+  },
+  "whitelistedNonPeerDependencies": ["."]
 }

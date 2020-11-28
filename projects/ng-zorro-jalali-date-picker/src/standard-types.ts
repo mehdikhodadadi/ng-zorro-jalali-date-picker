@@ -1,5 +1,4 @@
  
-
 import { TemplateRef } from '@angular/core';
 
 export type DisabledDateFn = (d: Date) => boolean;

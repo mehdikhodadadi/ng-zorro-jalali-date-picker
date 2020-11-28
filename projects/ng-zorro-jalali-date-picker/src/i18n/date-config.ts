@@ -1,5 +1,3 @@
- 
-
 import { InjectionToken } from '@angular/core';
 import { WeekDayIndex } from '../time/candy-date';
 

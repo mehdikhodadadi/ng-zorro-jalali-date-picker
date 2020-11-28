@@ -1,5 +1,3 @@
- 
-
 export class AnimationDuration {
   static SLOW = '0.3s'; // Modal
   static BASE = '0.2s';

@@ -1,6 +1,4 @@
- 
-
-import { Pipe, PipeTransform } from '@angular/core';
+ import { Pipe, PipeTransform } from '@angular/core';
 
 // Regular Expressions for parsing tags and attributes
 const SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;

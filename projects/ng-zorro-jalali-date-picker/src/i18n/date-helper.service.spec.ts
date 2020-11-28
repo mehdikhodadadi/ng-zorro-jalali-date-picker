@@ -1,10 +1,10 @@
 import { Injector } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 
-import { enUS } from 'date-fns-jalali/locale';
+import { faIR } from 'date-fns-jalali/locale';
 import { NZ_DATE_CONFIG } from './date-config';
 import { DateHelperByDatePipe, DateHelperService } from './date-helper.service';
-import en_US from './languages/en_US';
+import fa_IR from './languages/fa_IR';
 import { NzI18nModule } from './nz-i18n.module';
 import { NZ_DATE_LOCALE, NZ_I18N } from './nz-i18n.token';
 
@@ -16,7 +16,7 @@ describe('DateHelperService', () => {
     beforeEach(() => {
       injector = TestBed.configureTestingModule({
         imports: [NzI18nModule],
-        providers: [{ provide: NZ_I18N, useValue: en_US }]
+        providers: [{ provide: NZ_I18N, useValue: fa_IR }]
       });
 
       dateHelper = injector.get(DateHelperService);
@@ -46,7 +46,7 @@ describe('DateHelperService', () => {
     beforeEach(() => {
       injector = TestBed.configureTestingModule({
         imports: [NzI18nModule],
-        providers: [{ provide: NZ_DATE_LOCALE, useValue: enUS }]
+        providers: [{ provide: NZ_DATE_LOCALE, useValue: faIR }]
       });
 
       dateHelper = injector.get(DateHelperService);
@@ -73,7 +73,7 @@ describe('DateHelperService', () => {
       injector = TestBed.configureTestingModule({
         imports: [NzI18nModule],
         providers: [
-          { provide: NZ_DATE_LOCALE, useValue: enUS },
+          { provide: NZ_DATE_LOCALE, useValue: faIR },
           { provide: NZ_DATE_CONFIG, useValue: { firstDayOfWeek: 4 } }
         ]
       });

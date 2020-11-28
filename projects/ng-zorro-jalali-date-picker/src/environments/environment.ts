@@ -1,5 +1,3 @@
- 
-
-export const environment = {
+ export const environment = {
   isTestMode: false
 };
