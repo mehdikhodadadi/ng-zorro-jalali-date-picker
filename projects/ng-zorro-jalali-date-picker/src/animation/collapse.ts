@@ -1,5 +1,4 @@
  
-
 import { animate, AnimationTriggerMetadata, query, stagger, state, style, transition, trigger } from '@angular/animations';
 import { AnimationCurves } from './animation-consts';
 

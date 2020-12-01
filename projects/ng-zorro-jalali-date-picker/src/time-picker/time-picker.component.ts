@@ -1,5 +1,4 @@
- 
-import { CdkOverlayOrigin, ConnectionPositionPair } from '@angular/cdk/overlay';
+ import { CdkOverlayOrigin, ConnectionPositionPair } from '@angular/cdk/overlay';
 import { Platform } from '@angular/cdk/platform';
 import {
   AfterViewInit,
@@ -30,6 +29,9 @@ import { BooleanInput } from '../types/convert-input';
 import { InputBoolean } from '../util/convert';
 import { isNil } from '../util/check';
 import { DateHelperService } from '../i18n/date-helper.service';
+import getYear from 'date-fns-jalali/getYear';
+import getMonth from 'date-fns-jalali/getMonth';
+import getDay from 'date-fns-jalali/getDay';
 
 const NZ_CONFIG_MODULE_NAME: NzConfigKey = 'timePicker';
 
@@ -183,7 +185,7 @@ export class NzTimePickerComponent implements ControlValueAccessor, OnInit, Afte
       this.preValue = isValid(value) ? new Date(value!) : null;
     }
     this.value = isValid(value) ? new Date(value!) : null;
-    this.inputValue = this.dateHelper.format(value, this.nzFormat);
+    this.inputValue = `${getYear(this.value)}-${getMonth(this.value)}-${getDay(this.value)}`;
     this.cdr.markForCheck();
   }
 

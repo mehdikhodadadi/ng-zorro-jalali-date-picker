@@ -1,9 +1,3 @@
- 
-
-/**
- * A collection module of standard output for all lib components
- */
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';

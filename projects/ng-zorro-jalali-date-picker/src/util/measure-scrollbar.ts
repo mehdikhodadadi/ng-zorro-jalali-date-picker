@@ -1,8 +1,6 @@
- 
-let scrollbarVerticalSize: number;
+ let scrollbarVerticalSize: number;
 let scrollbarHorizontalSize: number;
 
-// Measure scrollbar width for padding body during modal show/hide
 const scrollbarMeasure = {
   position: 'absolute',
   top: '-9999px',

@@ -1,6 +1,4 @@
- 
-
-import { PlatformModule } from '@angular/cdk/platform';
+ import { PlatformModule } from '@angular/cdk/platform';
 import { NgModule } from '@angular/core';
 import { NzWaveDirective } from '../wave/nz-wave.directive';
 

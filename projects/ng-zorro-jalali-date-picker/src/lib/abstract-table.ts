@@ -1,6 +1,4 @@
- 
-
-import { Directive, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges, TemplateRef } from '@angular/core';
+ import { Directive, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges, TemplateRef } from '@angular/core';
 import { CandyDate } from '../time/candy-date';
 import { NzSafeAny } from '../types/any';
 import { FunctionProp } from '../types/common-wrap';

@@ -1,6 +1,4 @@
- 
-
-import { coerceBooleanProperty, coerceCssPixelValue, _isNumberValue } from '@angular/cdk/coercion';
+ import { coerceBooleanProperty, coerceCssPixelValue, _isNumberValue } from '@angular/cdk/coercion';
 
 import { warn } from '../logger/logger';
 import { NzSafeAny } from '../types/any';

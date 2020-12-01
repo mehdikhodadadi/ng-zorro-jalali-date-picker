@@ -23,6 +23,7 @@
     "@ant-design/icons-angular": "^10.2.0",
     "date-fns-jalali": "^2.16.1-0",
     "ng-packagr": "^11.0.3",
+    "ng-zorro-antd": "^10.2.0",
     "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

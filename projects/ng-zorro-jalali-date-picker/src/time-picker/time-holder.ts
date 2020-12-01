@@ -1,6 +1,4 @@
- 
-
-import { Observable, Subject } from 'rxjs';
+ import { Observable, Subject } from 'rxjs';
 
 import { isNil, isNotNil } from '../util/check';
 

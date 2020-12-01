@@ -1,6 +1,4 @@
- 
-
-import { CommonModule } from '@angular/common';
+ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { NzTransitionPatchModule } from '../transition-patch/transition-patch.module';

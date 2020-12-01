@@ -1,6 +1,4 @@
- 
-
-import { IconDefinition } from '@ant-design/icons-angular';
+ import { IconDefinition } from '@ant-design/icons-angular';
 import {
   BarsOutline,
   CalendarOutline,

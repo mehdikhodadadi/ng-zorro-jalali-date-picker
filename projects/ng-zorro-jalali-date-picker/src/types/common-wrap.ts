@@ -1,5 +1,2 @@
- 
-import { NzSafeAny } from './any';
-
-// Define a property that can also returned by called function
+ import { NzSafeAny } from './any';
 export type FunctionProp<T> = (...args: NzSafeAny[]) => T;

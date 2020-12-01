@@ -1,6 +1,4 @@
- 
-
-export function getRegExp(prefix: string | string[]): RegExp {
+ export function getRegExp(prefix: string | string[]): RegExp {
   const prefixArray = Array.isArray(prefix) ? prefix : [prefix];
   let prefixToken = prefixArray.join('').replace(/(\$|\^)/g, '\\$1');
 

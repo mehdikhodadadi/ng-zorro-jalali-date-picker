@@ -1,6 +1,4 @@
- 
-
-import { NzSafeAny } from '../types/any';
+ import { NzSafeAny } from '../types/any';
 import { NzTreeNode } from './nz-tree-base-node';
 import { NzTreeBaseService } from './nz-tree-base.service';
 

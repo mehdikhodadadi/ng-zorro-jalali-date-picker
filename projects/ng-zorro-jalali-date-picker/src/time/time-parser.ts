@@ -1,6 +1,3 @@
- 
-
-// from https://github.com/hsuanxyz/ng-time-parser
 import { FormStyle, getLocaleDayPeriods, TranslationWidth } from '@angular/common';
 import { isNotNil } from '../util/check';
 

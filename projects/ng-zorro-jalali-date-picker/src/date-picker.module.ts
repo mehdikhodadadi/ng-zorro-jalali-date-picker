@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NzButtonModule } from './button/button.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NzNoAnimationModule } from './no-animation/nz-no-animation.module';
 import { NzOutletModule } from './outlet/outlet.module';
@@ -24,6 +25,7 @@ import { NzYearPickerComponent } from './year-picker.component';
 
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     OverlayModule,

@@ -1,5 +1,3 @@
- 
-
 export { DecadeHeaderComponent as ɵDecadeHeaderComponent } from './decade-header.component';
 export { DecadeTableComponent as ɵDecadeTableComponent } from './decade-table.component';
 export { YearHeaderComponent as ɵYearHeaderComponent } from './year-header.component';

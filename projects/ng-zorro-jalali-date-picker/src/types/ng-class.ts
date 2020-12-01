@@ -1,5 +1,4 @@
- 
-import { NzSafeAny } from './any';
+ import { NzSafeAny } from './any';
 
 export type NgClassType = string | string[] | Set<string> | NgClassInterface;
 

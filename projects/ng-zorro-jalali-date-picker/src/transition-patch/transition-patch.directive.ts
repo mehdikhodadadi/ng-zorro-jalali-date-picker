@@ -1,13 +1,6 @@
- 
-
-import { AfterViewInit, Directive, ElementRef, Input, OnChanges, Renderer2 } from '@angular/core';
+ import { AfterViewInit, Directive, ElementRef, Input, OnChanges, Renderer2 } from '@angular/core';
 import { NzSafeAny } from '../types/any';
 
-/**
- * hack the bug
- * angular router change with unexpected transition trigger after calling applicationRef.attachView
- * https://github.com/angular/angular/issues/34718
- */
 @Directive({
   selector:
     '[nz-button], nz-button-group, [nz-icon], [nz-menu-item], [nz-submenu], nz-select-top-control, nz-select-placeholder, nz-input-group'

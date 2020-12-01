@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
 import { CandyDate } from '../time/candy-date';
 import { valueFunctionProp } from '../util/convert';
 
@@ -10,6 +8,7 @@ import { NzI18nService } from '../i18n/nz-i18n.service';
 import { AbstractTable } from './abstract-table';
 import { DateBodyRow, DateCell } from './interface';
 import { transCompatFormat } from './util';
+
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,8 @@ export class DateTableComponent extends AbstractTable implements OnChanges, OnIn
 
   private changeValueFromInside(value: CandyDate): void {
     // Only change date not change time
-    this.activeDate = this.activeDate.setYear(value.getYear()).setMonth(value.getMonth()).setDate(value.getDate());
+    //this.activeDate = this.activeDate.setYear(value.getYear()).setMonth(value.getMonth()).setDate(value.getDate());
+    this.activeDate = value;
     this.valueChange.emit(this.activeDate);
 
     if (!this.activeDate.isSameMonth(this.value)) {
@@ -86,7 +86,7 @@ export class DateTableComponent extends AbstractTable implements OnChanges, OnIn
           title: title,
           cellRender: valueFunctionProp(this.cellRender!, date), // Customized content
           fullCellRender: valueFunctionProp(this.fullCellRender!, date),
-          content: `${date.getDate()}`,
+          content: `${date.getJalaliDate()}`,
           onClick: () => this.changeValueFromInside(date),
           onMouseEnter: () => this.cellHover.emit(date)
         };

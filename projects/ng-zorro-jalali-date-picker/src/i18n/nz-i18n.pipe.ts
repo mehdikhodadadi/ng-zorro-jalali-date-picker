@@ -1,6 +1,4 @@
- 
-
-import { Pipe, PipeTransform } from '@angular/core';
+ import { Pipe, PipeTransform } from '@angular/core';
 
 import { NzI18nService } from './nz-i18n.service';
 

@@ -1,4 +1,3 @@
-/* tslint:disable:no-unused-variable no-inferrable-types no-any prefer-const */
 import { DOCUMENT, PlatformLocation } from '@angular/common';
 import { Injector } from '@angular/core';
 import { TestBed } from '@angular/core/testing';

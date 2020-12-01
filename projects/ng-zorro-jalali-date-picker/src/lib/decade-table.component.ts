@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, OnChanges, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, OnChanges, ViewEncapsulation } from '@angular/core';
 import { AbstractTable } from './abstract-table';
 import { DateBodyRow, DateCell, DecadeCell } from './interface';
 

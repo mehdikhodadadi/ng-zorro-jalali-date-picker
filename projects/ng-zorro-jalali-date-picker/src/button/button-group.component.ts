@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 
 export type NzButtonGroupSize = 'large' | 'default' | 'small';
 

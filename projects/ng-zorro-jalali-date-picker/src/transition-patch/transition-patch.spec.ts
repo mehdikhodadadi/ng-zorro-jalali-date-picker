@@ -1,6 +1,4 @@
- 
-
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { ɵcreateComponentBed as createComponentBed } from '../core-testing';
 import { NzTransitionPatchDirective } from './transition-patch.directive';

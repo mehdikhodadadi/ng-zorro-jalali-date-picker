@@ -1,6 +1,4 @@
- 
-
-import { DOCUMENT } from '@angular/common';
+ import { DOCUMENT } from '@angular/common';
 import { HttpBackend } from '@angular/common/http';
 import { Inject, Injectable, InjectionToken, Optional, RendererFactory2, Self } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';

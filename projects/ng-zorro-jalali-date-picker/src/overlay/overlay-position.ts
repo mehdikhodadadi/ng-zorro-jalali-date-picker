@@ -1,6 +1,4 @@
- 
-
-import { ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
+ import { ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
 
 export const POSITION_MAP: { [key: string]: ConnectionPositionPair } = {
   top: new ConnectionPositionPair({ originX: 'center', originY: 'top' }, { overlayX: 'center', overlayY: 'bottom' }),

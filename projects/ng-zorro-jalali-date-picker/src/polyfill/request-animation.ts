@@ -1,5 +1,4 @@
- 
-import { NzSafeAny } from '../types/any';
+ import { NzSafeAny } from '../types/any';
 
 // tslint:disable: typedef no-invalid-this
 const availablePrefixes = ['moz', 'ms', 'webkit'];

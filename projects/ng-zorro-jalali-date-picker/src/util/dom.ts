@@ -1,15 +1,5 @@
- 
-
-/**
- * This module provides utility functions to query DOM information or
- * set properties.
- */
-
 import { Observable } from 'rxjs';
 
-/**
- * Silent an event by stopping and preventing it.
- */
 export function silentEvent(e: Event): void {
   e.stopPropagation();
   e.preventDefault();

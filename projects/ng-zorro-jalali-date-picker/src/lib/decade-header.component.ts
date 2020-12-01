@@ -1,5 +1,3 @@
- 
-
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { AbstractPanelHeader } from './abstract-panel-header';
 import { PanelSelector } from './interface';
@@ -11,6 +9,7 @@ import { PanelSelector } from './interface';
   exportAs: 'decadeHeader',
   templateUrl: './abstract-panel-header.html'
 })
+
 export class DecadeHeaderComponent extends AbstractPanelHeader {
   previous(): void {}
   next(): void {}

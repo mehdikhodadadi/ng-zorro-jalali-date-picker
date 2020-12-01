@@ -1,6 +1,4 @@
- 
-
-export default {
+ export default {
   locale: 'fa',
   Pagination: {
     items_per_page: '/ صفحه',

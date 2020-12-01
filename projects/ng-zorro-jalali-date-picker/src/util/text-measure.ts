@@ -1,5 +1,4 @@
- 
-import { NzSafeAny } from '../types/any';
+ import { NzSafeAny } from '../types/any';
 
 export interface MeasureResult {
   finished: boolean;

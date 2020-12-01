@@ -1,6 +1,4 @@
- 
-
-import { DOCUMENT } from '@angular/common';
+ import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { reqAnimFrame } from '../polyfill';
 import { NzSafeAny } from '../types/any';

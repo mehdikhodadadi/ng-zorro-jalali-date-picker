@@ -1,6 +1,4 @@
- 
-
-import {
+ import {
   AfterContentInit,
   AfterViewInit,
   ChangeDetectionStrategy,

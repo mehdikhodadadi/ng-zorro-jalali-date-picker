@@ -1,6 +1,4 @@
- 
-
-export function toArray<T>(value: T | T[]): T[] {
+ export function toArray<T>(value: T | T[]): T[] {
   let ret: T[];
   if (value == null) {
     ret = [];

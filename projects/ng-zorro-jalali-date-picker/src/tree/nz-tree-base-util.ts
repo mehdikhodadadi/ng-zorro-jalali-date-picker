@@ -1,6 +1,4 @@
- 
-
-import { NzSafeAny } from '../types/any';
+ import { NzSafeAny } from '../types/any';
 import { FlattenNode, NzTreeNode, NzTreeNodeKey } from './nz-tree-base-node';
 
 export function isCheckDisabled(node: NzTreeNode): boolean {

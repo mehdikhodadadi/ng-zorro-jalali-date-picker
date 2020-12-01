@@ -15,6 +15,7 @@
         "date-fns-jalali/differenceInHours": "differenceInHours",
         "date-fns-jalali/differenceInMinutes": "differenceInMinutes",
         "date-fns-jalali/differenceInSeconds": "differenceInSeconds",
+        "date-fns-jalali/getDate": "getDate",
         "date-fns-jalali/isFirstDayOfMonth": "isFirstDayOfMonth",
         "date-fns-jalali/isLastDayOfMonth": "isLastDayOfMonth",
         "date-fns-jalali/isSameDay": "isSameDay",

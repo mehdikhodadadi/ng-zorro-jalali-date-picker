@@ -1,6 +1,4 @@
- 
-
-import { coerceElement } from '@angular/cdk/coercion';
+ import { coerceElement } from '@angular/cdk/coercion';
 import { ElementRef, Injectable, OnDestroy } from '@angular/core';
 import ResizeObserver from 'resize-observer-polyfill';
 import { Observable, Observer, Subject } from 'rxjs';

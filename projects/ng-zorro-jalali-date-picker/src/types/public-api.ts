@@ -1,6 +1,4 @@
- 
-
-export * from './common-wrap';
+ export * from './common-wrap';
 export * from './direction';
 export * from './indexable';
 export * from './ng-class';

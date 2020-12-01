@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 import { DateHelperService } from '../i18n/date-helper.service';
 import { AbstractPanelHeader } from './abstract-panel-header';

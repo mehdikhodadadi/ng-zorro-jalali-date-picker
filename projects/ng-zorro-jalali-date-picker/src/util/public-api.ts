@@ -1,6 +1,4 @@
- 
-
-export * from './array';
+ export * from './array';
 export * from './check';
 export * from './convert';
 export * from './dom';
@@ -9,7 +7,6 @@ export * from './string';
 export * from './is-promise';
 export * from './number';
 export * from './scroll-into-view-if-needed';
-export * from './textarea-caret-position';
 export * from './style';
 export * from './text-measure';
 export * from './measure-scrollbar';

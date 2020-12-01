@@ -1,5 +1,3 @@
- 
-
-export function ensureInBounds(value: number, boundValue: number): number {
+ export function ensureInBounds(value: number, boundValue: number): number {
   return value ? (value < boundValue ? value : boundValue) : boundValue;
 }

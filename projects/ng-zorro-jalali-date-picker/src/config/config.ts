@@ -1,6 +1,4 @@
- 
-
-import { InjectionToken, TemplateRef, Type } from '@angular/core';
+ import { InjectionToken, TemplateRef, Type } from '@angular/core';
 
 import { SafeUrl } from '@angular/platform-browser';
 import { ThemeType } from '@ant-design/icons-angular';

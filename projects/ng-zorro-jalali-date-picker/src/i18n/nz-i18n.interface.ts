@@ -1,5 +1,4 @@
- 
-import { Locale } from 'date-fns-jalali';
+ import { Locale } from 'date-fns-jalali';
 
 export interface NzPaginationI18nInterface {
   items_per_page: string;

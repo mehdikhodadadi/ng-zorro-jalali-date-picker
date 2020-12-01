@@ -42,6 +42,9 @@ import { DatePickerService } from './date-picker.service';
 import { DateRangePopupComponent } from './date-range-popup.component';
 import { RangePartType } from './standard-types';
 import { PREFIX_CLASS } from './util';
+import getYear from 'date-fns-jalali/getYear';
+import getMonth from 'date-fns-jalali/getMonth';
+import getDate from 'date-fns-jalali/getDate';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -397,11 +400,15 @@ export class NzPickerComponent implements OnInit, AfterViewInit, OnChanges, OnDe
 
   updateInputValue(): void {
     const newValue = this.datePickerService.value;
-    if (this.isRange) {
-      this.inputValue = newValue ? (newValue as CandyDate[]).map(v => this.formatValue(v)) : ['', ''];
-    } else {
-      this.inputValue = this.formatValue(newValue as CandyDate);
-    }
+    var value = newValue as CandyDate;
+    let date = value && value.nativeDate ? value.nativeDate : new Date();
+    this.inputValue = `${getYear(date)}-${getMonth(date) + 1}-${getDate(date)}`;
+
+    // if (this.isRange) {
+    //   this.inputValue = newValue ? (newValue as CandyDate[]).map(v => this.formatValue(v)) : ['', ''];
+    // } else {
+    //   this.inputValue = this.formatValue(newValue as CandyDate);
+    // }
     this.cdr.markForCheck();
   }
 

@@ -21,6 +21,7 @@ import setMonth from 'date-fns-jalali/setMonth';
 import setYear from 'date-fns-jalali/setYear';
 import startOfMonth from 'date-fns-jalali/startOfMonth';
 import startOfWeek from 'date-fns-jalali/startOfWeek';
+import getDate from 'date-fns-jalali/getDate';
 import { warn } from '../logger/logger';
 import { NzSafeAny } from '../types/any';
 import { IndexableObject } from '../types/indexable';
@@ -71,7 +72,6 @@ export function cloneDate(value: CompatibleValue): CompatibleValue {
 export class CandyDate implements IndexableObject {
   nativeDate: Date;
   // locale: string; // Custom specified locale ID
-
   constructor(date?: Date | string | number) {
     if (date) {
       if (date instanceof Date) {
@@ -103,7 +103,7 @@ export class CandyDate implements IndexableObject {
     return this.nativeDate.getMonth();
   }
 
-  getDay(): number {
+   getDay(): number {
     return this.nativeDate.getDay();
   }
 
@@ -113,6 +113,10 @@ export class CandyDate implements IndexableObject {
 
   getDate(): number {
     return this.nativeDate.getDate();
+  }
+
+  getJalaliDate(): number {
+    return getDate(this.nativeDate);
   }
 
   getHours(): number {

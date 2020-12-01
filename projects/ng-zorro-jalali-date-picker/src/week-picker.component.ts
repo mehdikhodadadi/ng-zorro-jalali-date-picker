@@ -1,5 +1,4 @@
- 
-import { Directive, Host, Optional } from '@angular/core';
+ import { Directive, Host, Optional } from '@angular/core';
 import { NzDatePickerComponent } from './date-picker.component';
 
 @Directive({

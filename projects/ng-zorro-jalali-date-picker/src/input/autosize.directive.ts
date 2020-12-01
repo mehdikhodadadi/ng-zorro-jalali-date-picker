@@ -1,5 +1,3 @@
- 
-
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, Directive, DoCheck, ElementRef, Input, NgZone, OnDestroy } from '@angular/core';
 import { NzResizeService } from '../services';

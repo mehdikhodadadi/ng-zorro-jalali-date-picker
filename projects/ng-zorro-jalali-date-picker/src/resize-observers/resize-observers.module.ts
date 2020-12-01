@@ -1,6 +1,4 @@
- 
-
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { NzResizeObserverFactory } from './resize-observers.service';
 
 @NgModule({

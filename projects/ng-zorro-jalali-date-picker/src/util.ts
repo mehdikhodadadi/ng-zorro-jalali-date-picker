@@ -1,4 +1,3 @@
- 
 import { CandyDate } from './time/candy-date';
 import { DisabledDateFn, DisabledTimeConfig, DisabledTimeFn } from './standard-types';
 

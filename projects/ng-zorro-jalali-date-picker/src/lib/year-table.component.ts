@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { CandyDate } from '../time';
 import { valueFunctionProp } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';

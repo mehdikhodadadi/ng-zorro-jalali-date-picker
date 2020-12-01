@@ -1,6 +1,4 @@
- 
-
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 
 import { NzI18nPipe } from './nz-i18n.pipe';
 

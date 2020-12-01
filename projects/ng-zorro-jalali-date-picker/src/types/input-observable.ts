@@ -1,6 +1,4 @@
- 
-
-import { SimpleChange } from '@angular/core';
+ import { SimpleChange } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface InputObservable {

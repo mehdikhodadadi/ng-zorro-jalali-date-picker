@@ -1,6 +1,4 @@
- 
-
-import { Injectable, OnDestroy } from '@angular/core';
+ import { Injectable, OnDestroy } from '@angular/core';
 import { CandyDate, cloneDate, CompatibleValue, NormalizedMode, normalizeRangeValue } from './time/candy-date';
 import { ReplaySubject, Subject } from 'rxjs';
 import { CompatibleDate, NzDateMode, RangePartType } from './standard-types';

@@ -1,6 +1,4 @@
- 
-
-import { DebugElement } from '@angular/core';
+ import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NzPickerComponent } from '../picker.component';
 import { PREFIX_CLASS } from '../util';

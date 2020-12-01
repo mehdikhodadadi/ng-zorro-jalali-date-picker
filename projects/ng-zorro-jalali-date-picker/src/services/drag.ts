@@ -1,6 +1,4 @@
- 
-
-import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
+ import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { filter, finalize, map } from 'rxjs/operators';
 

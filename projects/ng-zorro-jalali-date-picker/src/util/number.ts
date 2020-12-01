@@ -1,5 +1,4 @@
- 
-import { NzSafeAny } from '../types/any';
+ import { NzSafeAny } from '../types/any';
 
 export function getPercent(min: number, max: number, value: number): number {
   return ((value - min) / (max - min)) * 100;

@@ -1,14 +1,5 @@
-/**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-
 import { createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent } from './event-objects';
 
-/** Utility to dispatch any event on a Node. */
 export function dispatchEvent(node: Node | Window, event: Event): Event {
   node.dispatchEvent(event);
   return event;

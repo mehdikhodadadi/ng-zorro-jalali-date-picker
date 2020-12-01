@@ -1,6 +1,4 @@
- 
-
-import { NzTreeNode } from './nz-tree-base-node';
+ import { NzTreeNode } from './nz-tree-base-node';
 
 export interface NzFormatEmitEvent {
   eventName: string;

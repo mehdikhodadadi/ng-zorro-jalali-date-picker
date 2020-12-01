@@ -1,8 +1,3 @@
- 
-
-/**
- * Much like lodash.
- */
 export function padStart(toPad: string, length: number, element: string): string {
   if (toPad.length > length) {
     return toPad;

@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { AbstractPanelHeader } from './abstract-panel-header';
 import { PanelSelector } from './interface';
 

@@ -1,6 +1,4 @@
- 
-
-import { TemplateRef } from '@angular/core';
+ import { TemplateRef } from '@angular/core';
 
 import { NzSafeAny } from '../types/any';
 import { IndexableObject } from '../types/indexable';

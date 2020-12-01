@@ -1,6 +1,4 @@
- 
-
-import { ChangeDetectionStrategy, Component, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
 import { CandyDate } from '../time';
 import { valueFunctionProp } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';
@@ -47,7 +45,7 @@ export class MonthTableComponent extends AbstractTable implements OnChanges, OnI
           isDisabled,
           isSelected: month.isSameMonth(this.value),
           content,
-          title: content,
+          title: 'content',
           classMap: {},
           cellRender: valueFunctionProp(this.cellRender!, month), // Customized content
           fullCellRender: valueFunctionProp(this.fullCellRender!, month),
