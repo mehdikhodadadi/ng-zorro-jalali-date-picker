@@ -1,4 +1,4 @@
- export * from './animation-consts';
+export * from './animation-consts';
 export * from './collapse';
 export * from './fade';
 export * from './help';

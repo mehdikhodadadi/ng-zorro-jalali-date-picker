@@ -30,7 +30,7 @@ import {
   ViewChildren,
   ViewEncapsulation
 } from '@angular/core';
-import { slideMotion } from './animation';
+import { slideMotion } from './animation/slide';
 import { NzResizeObserver } from './resize-observers/resize-observers.service';
 import { CandyDate, CompatibleValue, wrongSortOrder } from './time/candy-date';
 import { NzSafeAny } from './types/any';

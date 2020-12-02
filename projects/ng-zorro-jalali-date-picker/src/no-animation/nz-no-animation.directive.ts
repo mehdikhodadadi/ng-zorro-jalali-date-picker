@@ -19,7 +19,10 @@ export class NzNoAnimationDirective implements OnChanges, AfterViewInit {
     private element: ElementRef,
     private renderer: Renderer2,
     @Optional() @Inject(ANIMATION_MODULE_TYPE) private animationType: string
-  ) {}
+  ) {
+     debugger;
+
+  }
 
   ngOnChanges(): void {
     this.updateClass();

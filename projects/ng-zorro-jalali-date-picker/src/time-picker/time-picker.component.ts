@@ -19,7 +19,7 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { isValid } from 'date-fns-jalali';
-import { slideMotion } from '../animation';
+import { slideMotion } from '../animation/slide';
 
 import { NzConfigKey } from '../config/config';
 import { NzConfigService, WithConfig } from '../config/config.service';

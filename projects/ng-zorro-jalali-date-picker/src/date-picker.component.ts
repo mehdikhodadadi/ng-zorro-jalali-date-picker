@@ -38,9 +38,11 @@ import { NzConfigService, WithConfig } from './config/config.service';
 import { warnDeprecation } from './logger/logger';
 import { NzPickerComponent } from './picker.component';
 import { CompatibleDate, DisabledTimeFn, NzDateMode, PresetRanges, SupportTimeOptions } from './standard-types';
-
 import { fa_IR } from './i18n';
 
+import { registerLocaleData } from '@angular/common';
+import fa from '@angular/common/locales/fa';
+registerLocaleData(fa);
 
 const POPUP_STYLE_PATCH = { position: 'relative' }; // Aim to override antd's style to support overlay's position strategy (position:absolute will cause it not working beacuse the overlay can't get the height/width of it's content)
 const NZ_CONFIG_MODULE_NAME: NzConfigKey = 'datePicker';
@@ -186,7 +188,7 @@ export class NzDatePickerComponent implements OnInit, OnChanges, OnDestroy, Cont
     private renderer: Renderer2,
     private elementRef: ElementRef,
     protected dateHelper: DateHelperService,
-    @Host() @Optional() public noAnimation?: NzNoAnimationDirective
+    @Host() @Optional() public noAnimation: NzNoAnimationDirective
   ) {
     this.i18n.setLocale(fa_IR);
   }
