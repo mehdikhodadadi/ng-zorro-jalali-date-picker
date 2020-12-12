@@ -30,7 +30,7 @@ export class DateHeaderComponent extends AbstractPanelHeader {
         className: `${this.prefixCls}-month-btn`,
         title: this.locale.monthSelect,
         onClick: () => this.changeMode('month'),
-        label: this.getJalaliMonthTitle(this.value.nativeDate)
+        label: this.value.getJalaliMonthTitle()
       }
     ];
   }

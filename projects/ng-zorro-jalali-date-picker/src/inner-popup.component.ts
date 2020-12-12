@@ -205,7 +205,7 @@ export class InnerPopupComponent implements OnChanges {
   }
 
   onChooseMonth(value: CandyDate): void {
-    this.activeDate = this.activeDate.setMonth(value.getMonth());
+      this.activeDate = this.activeDate.setMonth(value.getMonth());
     if (this.endPanelMode === 'month') {
       this.value = value;
       this.selectDate.emit(value);

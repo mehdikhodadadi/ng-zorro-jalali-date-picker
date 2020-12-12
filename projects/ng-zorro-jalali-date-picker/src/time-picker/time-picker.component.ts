@@ -169,7 +169,7 @@ export class NzTimePickerComponent implements ControlValueAccessor, OnInit, Afte
   @Input() @InputBoolean() nzAutoFocus = false;
 
   emitValue(value: Date | null): void {
-    this.setValue(value, true);
+      this.setValue(value, true);
 
     if (this._onChange) {
       this._onChange(this.value);
@@ -266,7 +266,7 @@ export class NzTimePickerComponent implements ControlValueAccessor, OnInit, Afte
   }
 
   setCurrentValueAndClose(): void {
-    this.emitValue(this.value);
+     this.emitValue(this.value);
     this.close();
   }
 

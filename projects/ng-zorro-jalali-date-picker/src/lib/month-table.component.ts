@@ -4,6 +4,7 @@ import { valueFunctionProp } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';
 import { AbstractTable } from './abstract-table';
 import { DateBodyRow, DateCell } from './interface';
+import getMonth from 'date-fns-jalali/getMonth';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -38,7 +39,7 @@ export class MonthTableComponent extends AbstractTable implements OnChanges, OnI
       for (let colIndex = 0; colIndex < this.MAX_COL; colIndex++) {
         const month = this.activeDate.setMonth(monthValue);
         const isDisabled = this.isDisabledMonth(month);
-        const content = this.dateHelper.format(month.nativeDate, 'MMM');
+        const content = month.getJalaliMonthTitle()
         const cell: DateCell = {
           trackByIndex: content,
           value: month.nativeDate,
@@ -49,7 +50,7 @@ export class MonthTableComponent extends AbstractTable implements OnChanges, OnI
           classMap: {},
           cellRender: valueFunctionProp(this.cellRender!, month), // Customized content
           fullCellRender: valueFunctionProp(this.fullCellRender!, month),
-          onClick: () => this.chooseMonth(cell.value.getMonth()), // don't use monthValue here,
+          onClick: () => this.chooseMonth(getMonth(cell.value)), // don't use monthValue here,
           onMouseEnter: () => this.cellHover.emit(month)
         };
 

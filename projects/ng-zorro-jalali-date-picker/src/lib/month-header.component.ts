@@ -4,6 +4,7 @@ import { DateHelperService } from '../i18n/date-helper.service';
 import { AbstractPanelHeader } from './abstract-panel-header';
 import { PanelSelector } from './interface';
 import { transCompatFormat } from './util';
+import getYear from 'date-fns-jalali/getYear';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -18,12 +19,12 @@ export class MonthHeaderComponent extends AbstractPanelHeader {
   }
 
   getSelectors(): PanelSelector[] {
-    return [
+      return [
       {
         className: `${this.prefixCls}-month-btn`,
         title: this.locale.yearSelect,
         onClick: () => this.changeMode('year'),
-        label: this.dateHelper.format(this.value.nativeDate, transCompatFormat(this.locale.yearFormat))
+        label: getYear(this.value.nativeDate).toString()
       }
     ];
   }

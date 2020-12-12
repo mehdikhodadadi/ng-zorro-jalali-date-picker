@@ -403,12 +403,6 @@ export class NzPickerComponent implements OnInit, AfterViewInit, OnChanges, OnDe
     var value = newValue as CandyDate;
     let date = value && value.nativeDate ? value.nativeDate : new Date();
     this.inputValue = `${getYear(date)}-${getMonth(date) + 1}-${getDate(date)}`;
-
-    // if (this.isRange) {
-    //   this.inputValue = newValue ? (newValue as CandyDate[]).map(v => this.formatValue(v)) : ['', ''];
-    // } else {
-    //   this.inputValue = this.formatValue(newValue as CandyDate);
-    // }
     this.cdr.markForCheck();
   }
 

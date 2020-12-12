@@ -15,6 +15,9 @@
   DatePicker: {
     lang: {
       placeholder: 'انتخاب تاریخ',
+      weekPlaceholder: 'انتخاب هفته',
+      monthPlaceholder: 'انتخاب ماه',
+      yearPlaceholder: 'انتخاب سال',
       rangePlaceholder: ['تاریخ شروع', 'تاریخ پایان'],
       locale: 'fa_IR',
       today: 'امروز',

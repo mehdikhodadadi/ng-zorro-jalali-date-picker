@@ -3,7 +3,6 @@ import { CandyDate } from '../time/candy-date';
 import { NzCalendarI18nInterface } from '../i18n/nz-i18n.interface';
 import { NzDateMode } from '../standard-types';
 import { PanelSelector } from './interface';
-import getMonth from 'date-fns-jalali/getMonth';
 
 @Directive()
 // tslint:disable-next-line:directive-class-suffix
@@ -20,53 +19,6 @@ export abstract class AbstractPanelHeader implements OnInit, OnChanges {
 
   @Output() readonly panelModeChange = new EventEmitter<NzDateMode>();
   @Output() readonly valueChange = new EventEmitter<CandyDate>();
-
-  getJalaliMonthTitle(date: Date): string {
-    let month: number = getMonth(date);
-    let value: string;
-
-     switch(month)
-     {
-      case 0:
-        value = "فروردین";
-        break;
-      case 1:
-        value = "اردیبهشت";
-        break;
-      case 2:
-        value = "خرداد";
-        break;
-      case 3:
-        value = "تیر";
-        break;
-      case 4:
-        value = "مرداد";
-        break;
-      case 5:
-        value = "شهریور";
-        break;
-      case 6:
-        value = "مهر";
-        break;
-      case 7:
-        value = "آبان";
-        break;
-      case 8:
-        value = "آذر";
-        break;
-      case 9:
-        value = "دی";
-        break;
-      case 10:
-        value = "بهمن";
-        break;
-      case 11:
-        value = "اسفند";
-        break;
-     }
-
-    return value;
-  }
 
   abstract getSelectors(): PanelSelector[];
 

@@ -22,6 +22,7 @@ import setYear from 'date-fns-jalali/setYear';
 import startOfMonth from 'date-fns-jalali/startOfMonth';
 import startOfWeek from 'date-fns-jalali/startOfWeek';
 import getDate from 'date-fns-jalali/getDate';
+import getMonth from 'date-fns-jalali/getMonth';
 import { warn } from '../logger/logger';
 import { NzSafeAny } from '../types/any';
 import { IndexableObject } from '../types/indexable';
@@ -115,6 +116,53 @@ export class CandyDate implements IndexableObject {
     return this.nativeDate.getDate();
   }
 
+  getJalaliMonthTitle(): string {
+    let month: number = getMonth(this.nativeDate);
+    let value: string;
+
+     switch(month)
+     {
+      case 0:
+        value = "فروردین";
+        break;
+      case 1:
+        value = "اردیبهشت";
+        break;
+      case 2:
+        value = "خرداد";
+        break;
+      case 3:
+        value = "تیر";
+        break;
+      case 4:
+        value = "مرداد";
+        break;
+      case 5:
+        value = "شهریور";
+        break;
+      case 6:
+        value = "مهر";
+        break;
+      case 7:
+        value = "آبان";
+        break;
+      case 8:
+        value = "آذر";
+        break;
+      case 9:
+        value = "دی";
+        break;
+      case 10:
+        value = "بهمن";
+        break;
+      case 11:
+        value = "اسفند";
+        break;
+     }
+
+    return value;
+  }
+
   getJalaliDate(): number {
     return getDate(this.nativeDate);
   }
@@ -148,6 +196,10 @@ export class CandyDate implements IndexableObject {
   }
 
   setYear(year: number): CandyDate {
+    return new CandyDate(setYear(this.nativeDate, year));
+  }
+
+  setJalaliYear(year: number): CandyDate {
     return new CandyDate(setYear(this.nativeDate, year));
   }
 

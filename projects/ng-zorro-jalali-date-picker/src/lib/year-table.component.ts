@@ -4,6 +4,7 @@ import { valueFunctionProp } from '../util/convert';
 import { DateHelperService } from '../i18n/date-helper.service';
 import { AbstractTable } from './abstract-table';
 import { DateBodyRow, DateCell, YearCell } from './interface';
+import getYear from 'date-fns-jalali/getYear';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -40,8 +41,8 @@ export class YearTableComponent extends AbstractTable {
       };
       for (let colIndex = 0; colIndex < this.MAX_COL; colIndex++) {
         const yearNum = previousYear + yearValue;
-        const year = this.activeDate.setYear(yearNum);
-        const content = this.dateHelper.format(year.nativeDate, 'yyyy');
+        const year = new CandyDate(`${yearNum}/${this.activeDate.getMonth()}/${this.activeDate.getDate()}`);
+        const content = getYear(year.nativeDate).toString();
         const isDisabled = this.isDisabledYear(year);
         const cell: YearCell = {
           trackByIndex: content,
@@ -124,7 +125,7 @@ export class YearTableComponent extends AbstractTable {
   }
 
   private chooseYear(year: number): void {
-    this.value = this.activeDate.setYear(year);
+    this.value = new CandyDate(`${year}/${this.activeDate.getMonth()}/${this.activeDate.getDate()}`);
     this.valueChange.emit(this.value);
     this.render();
   }
