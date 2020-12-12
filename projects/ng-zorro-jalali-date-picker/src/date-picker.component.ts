@@ -38,7 +38,7 @@ import { NzConfigService, WithConfig } from './config/config.service';
 import { warnDeprecation } from './logger/logger';
 import { NzPickerComponent } from './picker.component';
 import { CompatibleDate, DisabledTimeFn, NzDateMode, PresetRanges, SupportTimeOptions } from './standard-types';
-import { fa_IR } from './i18n';
+import { fa_IR } from './i18n/';
 
 import { registerLocaleData } from '@angular/common';
 import fa from '@angular/common/locales/fa';

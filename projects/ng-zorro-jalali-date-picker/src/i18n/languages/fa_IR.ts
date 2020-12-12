@@ -1,4 +1,4 @@
- export default {
+export default {
   locale: 'fa',
   Pagination: {
     items_per_page: '/ صفحه',
@@ -18,6 +18,9 @@
       weekPlaceholder: 'انتخاب هفته',
       monthPlaceholder: 'انتخاب ماه',
       yearPlaceholder: 'انتخاب سال',
+      rangeYearPlaceholder: [],
+      rangeMonthPlaceholder: [],
+      rangeWeekPlaceholder: [],
       rangePlaceholder: ['تاریخ شروع', 'تاریخ پایان'],
       locale: 'fa_IR',
       today: 'امروز',
